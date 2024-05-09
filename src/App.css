@@ -1,11 +1,13 @@
 .App {
   text-align: center;
+  
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -14,7 +16,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #fff7f0;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -36,3 +38,159 @@
     transform: rotate(360deg);
   }
 }
+
+.navbar {
+  background: linear-gradient(to bottom, #f96d00, #FF4500);
+  box-shadow: 0px 2px 5px #febe7e;
+  border-radius: 10px;
+  color: white;
+  align-items: center;
+ 
+  align-items: center; /* Centrer verticalement les éléments */
+  justify-content: space-between;
+  padding: 10px 20px; /* Marge intérieure */
+}
+
+.image {
+  margin-right: auto; /* Pousser l'image tout à gauche */
+  
+}
+
+.photo {
+  width: 80px; /* Ajuster la taille de l'image si nécessaire */
+  height: auto;
+  border-radius: 80%; /* Pour un effet rond si vous le souhaitez */
+  
+}
+
+.logo {
+  width: 80px; /* Ajustez la taille du logo selon vos besoins */
+  border-radius: 80%; /* Pour un effet rond si vous le souhaitez */
+  margin-left: 10px; /* Espacement entre le logo et les liens */
+  height: 80px;
+ 
+}
+
+
+.nav-links {
+  flex-grow: 1; /* Permet aux liens de navigation de prendre l'espace restant */
+}
+
+.navbar-nav .nav-link {
+  color: #fff;
+  transition: color 0.2s ease-in-out;
+  font-family: 'Arial', sans-serif;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #f8f9fa;
+}
+
+.collapse.navbar-collapse {
+  justify-content: center; /* Centrer les liens de navigation */
+}
+
+
+/* App.css */
+.navbar-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+}
+
+.navbar-nav a {
+  margin-right: 20px; /* Ajustez cette valeur selon vos besoins */
+}
+
+.navbar::before {
+  content: ''; /* Contenu vide pour le pseudo-élément */
+  position: absolute; /* Position absolue */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, #f96d00, #FF4500); /* Dégradé d'orange */
+  z-index: -1; /* Mettre le pseudo-élément en arrière-plan */
+  border-radius: 10px; /* Même bordures arrondies que la barre de navigation */
+}
+.cartes-container {
+  display: flex;
+}
+
+/* Ajoute de l'espace entre les cartes en ajoutant de la marge à droite */
+.cartes-container .card {
+  margin-right: 100px; /* Vous pouvez ajuster cette valeur selon vos besoins */
+  margin-left: 0px;
+  margin-bottom: 100px;
+}
+h2{
+ color:#f96d00;
+ 
+}
+
+.container-fluid {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center; /* Centrez verticalement les éléments de la barre de navigation */
+}
+/* Centrage de la fiche de contact */
+.contact-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color:  blanchedalmond;
+}
+
+.contact-container {
+  font-family: Arial, sans-serif;
+  border: 2px solid orange;
+  padding: 20px;
+  border-radius: 60px;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.2); /* Ombre */
+  transition: transform 0.3s ease; /* Transition pour l'effet 3D */
+  background-color: #f96d00; 
+}
+
+.contact-container:hover {
+  transform: scale(1.05); /* Agrandir légèrement sur hover pour l'effet 3D */
+}
+
+.image {
+  text-align: center;
+}
+
+.photo {
+  width: 100px;
+  border-radius: 50%;
+}
+
+.contact-container h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+.contact-container ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.contact-container ul li {
+  margin-bottom: 10px;
+}
+
+.contact-container strong {
+  font-weight: bold;
+}
+
+
+
